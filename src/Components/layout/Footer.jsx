@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex gap-1 btn-ghost text-xl">
               <div className='w-12'><img src="/Assets/Stethoscope.png" alt="Stethoscope_icon" /></div>
-              <span className="font-bold text-3xl">Virtual<span className='text-sky-600'>Doc</span></span>
+              <span className="font-bold text-3xl">Virtual<span className="text-cyan-600">Doc</span></span>
             </Link>
           </div>
         </aside>

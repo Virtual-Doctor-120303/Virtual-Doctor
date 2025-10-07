@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { GrLanguage } from "react-icons/gr";
 
-/////////////////////////////// All items
+/////////////////////////////// All items////////////////////////////
 
 const navItems = [
   {
@@ -125,10 +125,14 @@ const navItems = [
     ]
   }
 ];
-/////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 
 
-/////////////////// Theme Section
+
+
+
+
+/////////////////// Theme Section/////////////////////////////////////
 const Navbar = () => {
   const [theme, setTheme] = useState('light');
 
@@ -144,7 +148,10 @@ const Navbar = () => {
     localStorage.setItem('theme', newTheme);
     document.documentElement.setAttribute('data-theme', newTheme);
   };
-  ////////////////////////////////////////
+  /////////////////////////////////////////////////////////////////
+
+
+
 
 
   const [showNavbar, setShowNavbar] = useState(true);
@@ -171,7 +178,10 @@ const Navbar = () => {
   }, [lastScrollY]);
 
 
-  /////////////////////////
+  /////////////////////////////////////////////////////////////
+
+
+
 
 
   return (
@@ -183,7 +193,7 @@ const Navbar = () => {
         <div>
           <Link href="/" className="flex gap-1 btn-ghost text-xl">
             <div className='w-12'><img src="/Assets/Stethoscope.png" alt="Stethoscope_icon" /></div>
-            <span className="font-bold text-3xl">Virtual<span className='text-sky-600'>Doc</span></span>
+            <span className="font-bold text-3xl">Virtual<span className="text-cyan-600">Doc</span></span>
           </Link>
         </div>
 
